@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/atoms/button";
+import InputField from "@/components/atoms/inputfield";
 
 
 export default function Footer() {
@@ -64,9 +66,12 @@ export default function Footer() {
                     </p>
                     <form action="" className="mt-5">
                         <div className="mb-5">
-                            <input type="text" name="email" className="w-full p-3 rounded-sm bg-white" placeholder="karmendos@gmail.com"/>
+                        <InputField type ="email" placeholder="karmansony@gmail.com" className="mt-2"></InputField>
+                            {/* <input type="text" name="email" className="w-full p-3 rounded-sm bg-white" placeholder="karmendos@gmail.com"/> */}
                         </div>
-                        <button className="bg-blue-900 p-3 font-bold text-white w-full text-center rounded-sm hover:bg-blue-500">Daftar Sekarang</button>
+                        <Button className="font-bold">
+                            KARMEN BLEDOS
+                        </Button>
                     </form>
                 </div>
             </div>
