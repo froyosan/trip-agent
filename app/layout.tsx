@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
-import NavBar from "@/components/organisme/navbar";
-import Footer from "@/components/footer";
+import NavBar from "@/components/organisme/navigator/navbar";
+import Footer from "@/components/organisme/sections/footer/footer";
 import "./globals.css";
 
 
