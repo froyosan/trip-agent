@@ -14,9 +14,9 @@ type CardCityProps = {
 
 }
 
-export default function Card({ imageSrc, alt = "image", title, children, href }: CardCityProps) {
+export default function Card({ imageSrc, alt = "imageButton", title, children, href = ""}: CardCityProps) {
   return (
-    <Link type="button" href={""} className={ twMerge ("bg-white shadow-lg rounded-sm transition duration-100 hover:shadow-sm")}>
+    <Link type="button" href={href} className={ twMerge ("bg-white shadow-lg rounded-sm transition duration-100 hover:shadow-sm")}>
         <div className="h-[388px] w-auto rounded-t-sm relative">
         <Image src={imageSrc}
           alt={alt}
