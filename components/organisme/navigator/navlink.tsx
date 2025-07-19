@@ -1,15 +1,62 @@
 "use client"
 
 import { useState } from "react";
+import LevelTwoDropdown from "@/components/atoms/dropdownMenus";
 import { IoClose, IoMenu } from "react-icons/io5";
 import clsx from "clsx";
 import Link from "next/link";
 
 export default function NavLink() {
-    const [open, setOpen] = useState(false);
     return (
     <>
-        <button 
+        <div className="flex gap-4 bg-white p-4 z-50">
+        <LevelTwoDropdown
+            title="Open Trip"
+            active
+            items={[
+            { label: "Komodo - Labuan Bajo" },
+            { label: "Sumba" },
+            {
+                label: "Nusa Penida",
+                subItems: [
+                { label: "Open Trip Nusa Penida 2D1N", href: "" },
+                { label: "Nusa Penida Explore", href: "" },
+                ],
+            },
+            { label: "Derawan" },
+            { label: "Raja Ampat" },
+            { label: "Banggai" },
+            { label: "Bali" },
+            ]}
+        />
+
+        <LevelTwoDropdown
+            title="Private Trip"
+            items={[
+            { label: "Lombok" },
+            {
+                label: "Togean",
+                subItems: [{ label: "Togean 4D3N", href: "#" }],
+            },
+            ]}
+        />
+
+        <LevelTwoDropdown
+            title="Destinasi"
+            items={[
+            { label: "Kalimantan" },
+            { label: "Papua" },
+            ]}
+        />
+
+        <LevelTwoDropdown
+            title="Kapal"
+            items={[
+            { label: "Kapal Tongkang", subItems: [{ label: "Paket Batubara", href: "#" }] },
+            ]}
+        />
+    </div>
+        {/* <button 
             onClick={() => setOpen(!open)}
             className="inline-flex items-center p-2 justify-center text-sm text-gray-500 rounded-md md:hidden hover:bg-gray-100">
             {!open ? <IoMenu className="size-8" /> : <IoClose className="size-8"/>}
@@ -47,7 +94,7 @@ export default function NavLink() {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </div> */}
     </>
   );
 }

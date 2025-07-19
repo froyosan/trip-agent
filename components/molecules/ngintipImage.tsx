@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
-export default function PeekImage () {
+export default function Ngintip () {
     const ref = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -22,8 +22,8 @@ export default function PeekImage () {
         ref={ref}
         className={`transition-all duration-1000 ease-in-out overflow-hidden rounded-lg shadow-xl w-full h-96 relative ${isVisible? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <Image
-            src="/peek.png"
-            alt="ngintip"
+            src=""
+            alt=""
             fill
             className="object-cover"
         />
