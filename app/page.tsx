@@ -1,8 +1,8 @@
 import Hero from "@/components/organisme/sections/hero/hero";
-import Card from "@/components/molecules/cardcity";
 import CardBiasa from "@/components/atoms/cardBiasa";
-import Ngintip from "@/components/molecules/ngintipImage";
 import ProfileUs from "@/components/organisme/sections/profile/profile";
+import AccordionPage from "@/components/organisme/sections/faq/faq";
+import CardPictures from "@/components/molecules/cardPictures";
 
 
 export default function Home() {
@@ -13,15 +13,8 @@ export default function Home() {
             <div className="text-center">
                 <h1 className="text-3xl font-bold uppercase">Paket Open Trip & Private Trip di Indonesia</h1>
             </div>
-            <div className="max-w-screen-xl py-10 pb-20 px-6 mx-auto">
-                <div className="grid gap-10 md:grid-cols-3">
-                <Card imageSrc="/sumba.jpeg" alt="Image Sumba" title="Sumba" href=""/>
-                <Card imageSrc="/sumba.jpeg" alt="Image Sumba" title="Labuan Bajo"/>
-                <Card imageSrc="/sumba.jpeg" alt="Image Sumba" title="Bali"/>
-                <Card imageSrc="/sumba.jpeg" alt="Image Sumba" title="Yogyakarta"/>
-                <Card imageSrc="/sumba.jpeg" alt="Image Sumba" title="Semarang"/>
-                <Card imageSrc="/sumba.jpeg" alt="Image Sumba" title="Lombock"/>
-                </div>
+            <div>
+                <CardPictures />
             </div>
         </div>
             <div className="mt-16">
@@ -43,6 +36,9 @@ export default function Home() {
                 </div>
             </div>
             </div>
+        </div>
+        <div className="flex items-center justify-center">
+            <AccordionPage/>
         </div>
     </div>
   );

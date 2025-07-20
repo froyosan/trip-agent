@@ -69,7 +69,7 @@ export default function Footer() {
                         <InputField type ="email" placeholder="karmansony@gmail.com" className="mt-2"></InputField>
                             {/* <input type="text" name="email" className="w-full p-3 rounded-sm bg-white" placeholder="karmendos@gmail.com"/> */}
                         </div>
-                        <Button className="font-bold">
+                        <Button className="font-bold" variant="third" size="lg">
                             KARMEN BLEDOS
                         </Button>
                     </form>
