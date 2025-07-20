@@ -1,10 +1,6 @@
 "use client"
 
-import { useState } from "react";
 import LevelTwoDropdown from "@/components/atoms/dropdownMenus";
-import { IoClose, IoMenu } from "react-icons/io5";
-import clsx from "clsx";
-import Link from "next/link";
 
 export default function NavLink() {
     return (
@@ -56,6 +52,7 @@ export default function NavLink() {
             ]}
         />
     </div>
+    
         {/* <button 
             onClick={() => setOpen(!open)}
             className="inline-flex items-center p-2 justify-center text-sm text-gray-500 rounded-md md:hidden hover:bg-gray-100">
